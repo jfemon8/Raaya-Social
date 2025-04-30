@@ -3,13 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Raaya Social</title>
   </head>
+
   <body>
     <section class="poppins container">
-      <h1>Let's start</h1>
+      <!-- Navbar -->
+      <nav id="navbar" class="nav-container">
+        <div class="dropdown dropdown_menu">
+          <a id="dropdown_btn" class="dropbtn"><i class="fa-solid fa-bars"></i></a>
+          <div id="child_content" class="dropdown-content">
+            <ul class="sm-menu menu">
+              <li><a href="#navbar">Home</a></li>
+              <li class="dropdown-2">
+                <a id="nested_dropdown_btn" class="dropbtn">
+                  Service <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div id="nested_child_content" class="dropdown-content-2">
+                  <a href="#">Service 1</a>
+                  <a href="#">Service 2</a>
+                  <a href="#">Service 3</a>
+                </div>
+              </li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">White Level</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#navbar"
+          ><img class="logo" src="images/Logo.png" alt="Logo"
+        /></a>
+        <ul class="menu lg-menu">
+          <li><a href="#navbar">Home</a></li>
+          <li class="dropdown">
+            <a class="dropbtn">
+              Service <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Service 1</a>
+              <a href="#">Service 2</a>
+              <a href="#">Service 3</a>
+            </div>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">White Level</a></li>
+        </ul>
+        <div class="nav-btn-container">
+          <button class="btn-gray">Log in</button>
+          <button class="btn-purple">Book a demo</button>
+        </div>
+      </nav>
     </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
