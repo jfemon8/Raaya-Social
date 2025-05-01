@@ -725,6 +725,33 @@ _____________________________ */
   color: black;
 }
 
+/* Short Form Section */
+
+.short-form-container {
+  padding: 5rem 7.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.short-form-container > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.short-form-text > h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.short-form-text > p {
+  color: #344054;
+  margin: 1.25rem 0;
+}
+
 /* ------------------------------
 Tablet Responsive
 ------------------------------ */
@@ -811,7 +838,7 @@ Tablet Responsive
   /* Services */
 
   .creative-services {
-    padding: 1.5rem 1.25rem;
+    padding: 1.5rem 1rem;
     margin-top: 2rem;
   }
 
@@ -858,6 +885,22 @@ Tablet Responsive
 
   .business-title > h1 {
     font-size: 2rem;
+  }
+
+  /* Short Form Section */
+
+  .short-form-container {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .short-form-text > h1 {
+    font-size: 2.5rem;
+  }
+
+  .short-form-text > p {
+    margin: 1rem 0;
   }
 }
 
@@ -927,13 +970,13 @@ Mobile Responsive
   ______________________________ */
 
   .main-container {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   /* Services */
 
   .creative-services {
-    padding: 1.25rem 1rem;
+    padding: 1rem 0.5rem;
     margin-top: 1rem;
   }
 
@@ -970,5 +1013,16 @@ Mobile Responsive
 
   .business-title {
     gap: 0.25rem;
+  }
+
+  /* Short Form Section */
+
+  .short-form-container {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  .short-form-text > h1 {
+    font-size: 2rem;
   }
 }
