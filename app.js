@@ -36,3 +36,16 @@ serviceCards.forEach(card => {
 
 
 
+// Business Section
+
+const carousel = document.getElementById('carousel');
+const scrollAmount = 300;
+
+document.querySelector('.carousel-nav.left').addEventListener('click', () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+document.querySelector('.carousel-nav.right').addEventListener('click', () => {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+

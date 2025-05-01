@@ -606,7 +606,122 @@ _____________________________ */
   padding: 0.75rem 1.5rem 1.5rem 1rem;
 }
 
+/* Business Section */
 
+.business {
+  margin-top: 5rem;
+}
+
+.business-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.business-title > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.business-title > h1 > span {
+  color: #a554e6;
+}
+
+.business-title-img {
+  width: 10rem;
+  height: 2rem;
+  border: 0.25rem solid #a554e6;
+  border-radius: 1rem;
+}
+
+.business-title-img > img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.carousel-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.carousel-item > p {
+  color: #344054;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.carousel-img-container {
+  position: relative;
+}
+
+.carousel-img {
+  display: block;
+  height: 25rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.carousel-play {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+/* Arrows */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.carousel-nav.left {
+  left: 0.625rem;
+}
+
+.carousel-nav.right {
+  right: 0.625rem;
+}
+
+.carousel-nav:hover {
+  background: whitesmoke;
+  color: black;
+}
 
 /* ------------------------------
 Tablet Responsive
@@ -728,6 +843,20 @@ Tablet Responsive
     gap: 1.25rem;
     margin-top: 2rem;
   }
+
+  /* Business Section */
+
+  .business {
+    margin-top: 2rem;
+  }
+
+  .business-title {
+    gap: 0.5rem;
+  }
+
+  .business-title > h1 {
+    font-size: 2rem;
+  }
 }
 
 /* ------------------------------
@@ -829,5 +958,15 @@ Mobile Responsive
     grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 1rem;
+  }
+
+  /* Business Section */
+
+  .business {
+    margin-top: 1rem;
+  }
+
+  .business-title {
+    gap: 0.25rem;
   }
 }
