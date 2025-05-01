@@ -413,6 +413,8 @@
   padding: 5rem 7.5rem;
 }
 
+/* Services */
+
 .creative-services {
   background-color: white;
   padding: 1.75rem 1.5rem;
@@ -440,49 +442,107 @@
   margin: 0 auto;
 }
 
-.services-container{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+.services-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
-.provided-services, .packages{
-    width: calc(50% - 1.55rem);
+.provided-services,
+.packages {
+  width: calc(50% - 1.55rem);
 }
 
-.service-intro{
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
+.service-intro {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.service-intro > h3{
-    font-size: 1.5rem;
-    font-weight: 500;
+.service-intro > h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-.fa-circle-check{
-    color: #1E9500;
-    padding-top: 0.25rem;
+.fa-circle-check {
+  color: #1e9500;
+  padding-top: 0.25rem;
 }
 
-.service-info{
-    display: flex;
-    gap: 0.75rem;
-    justify-content: flex-start;
-    margin-top: 2rem;
+.service-info {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  margin-top: 2rem;
 }
 
-.service-info h4{
-    font-weight: 500;
-    font-size: 1.125rem;
-    color: #101828;
+.service-info h4 {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #101828;
 }
 
-.service-info p{
-    font-size: 0.875rem;
-    color: #344054;
+.service-info p {
+  font-size: 0.875rem;
+  color: #344054;
 }
+
+.vertical-line-2 {
+  width: 0.0625rem;
+  height: 20rem;
+  background: linear-gradient(to bottom, transparent, #000000, transparent);
+  margin: auto 0;
+  border-radius: 100%;
+}
+
+.package-card {
+  border: 0.0625rem solid #d0d5dd;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.package-card:hover {
+  cursor: pointer;
+  background-color: #d0d5dd;
+}
+
+.package-card-title > h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1d2939;
+}
+
+.package-card-title > p {
+  color: #344054;
+}
+
+.package-fa {
+  color: #a554e6;
+}
+
+.popular-package {
+  border: 0.0625rem solid black;
+  background-color: #475467;
+  border-radius: 0.375rem;
+  color: white;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+}
+
+.popular-package > p {
+  font-size: 0.75rem;
+}
+
+.service-btn {
+  margin-top: 3rem;
+  text-align: center;
+}
+
 
 /* ------------------------------
 Tablet Responsive
@@ -547,7 +607,8 @@ Tablet Responsive
     font-size: 1rem;
   }
 
-  .vertical-line {
+  .vertical-line,
+  .vertical-line-2 {
     display: none;
   }
 
@@ -565,6 +626,8 @@ Tablet Responsive
     padding: 1rem;
   }
 
+  /* Services */
+
   .creative-services {
     padding: 1.5rem 1.25rem;
     margin-top: 2rem;
@@ -577,6 +640,16 @@ Tablet Responsive
 
   .service-description {
     width: 90%;
+  }
+
+  .services-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .provided-services,
+  .packages {
+    width: 100%;
   }
 }
 
@@ -648,6 +721,8 @@ Mobile Responsive
     padding: 1rem;
   }
 
+  /* Services */
+
   .creative-services {
     padding: 1.25rem 1rem;
     margin-top: 1rem;
@@ -660,5 +735,9 @@ Mobile Responsive
 
   .service-description {
     width: 100%;
+  }
+
+  .services-container {
+    gap: 1rem;
   }
 }
