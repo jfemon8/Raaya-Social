@@ -39,6 +39,7 @@ serviceCards.forEach(card => {
 // Business Section
 
 const carousel = document.getElementById('carousel');
+const carousel2 = document.getElementById('carousel-2');
 const scrollAmount = 300;
 
 document.querySelector('.carousel-nav.left').addEventListener('click', () => {
@@ -47,5 +48,13 @@ document.querySelector('.carousel-nav.left').addEventListener('click', () => {
 
 document.querySelector('.carousel-nav.right').addEventListener('click', () => {
     carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+document.querySelector('.carousel-nav.left2').addEventListener('click', () => {
+    carousel2.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+document.querySelector('.carousel-nav.right2').addEventListener('click', () => {
+    carousel2.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 });
 
