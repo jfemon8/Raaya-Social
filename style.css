@@ -225,7 +225,7 @@
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.75rem;
   align-items: start;
 }
@@ -560,7 +560,7 @@ _____________________________ */
 
 .engaging-clips {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 3rem;
 }
@@ -752,6 +752,183 @@ _____________________________ */
   margin: 1.25rem 0;
 }
 
+/* Client Stories */
+
+.client-stories-container {
+  background-color: #f5f5f5;
+  padding: 5rem 7.5rem;
+}
+
+.client-stories-title {
+  justify-content: center;
+}
+
+.client-marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 20rem;
+  margin-top: 3rem;
+}
+
+.client-marquee-text {
+  position: absolute;
+  white-space: nowrap;
+  animation: move-left 30s linear infinite;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client-content {
+  position: relative;
+  height: 20rem;
+  width: 16rem;
+}
+
+.client-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.client-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.client-details {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+
+.client-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.0625rem solid white;
+  border-radius: 100%;
+}
+
+.client-icon > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.client-title > h4 {
+  font-weight: 500;
+  color: white;
+}
+
+.client-title > p {
+  font-size: 0.875rem;
+  color: #f9fafb;
+}
+
+.reviews {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-card {
+  border: 0.0625rem solid rgba(0, 159, 226, 0.33);
+  padding: 1.5rem 2.24rem;
+  border-radius: 0.875rem;
+  background-color: white;
+}
+
+.top-cards {
+  grid-column: 3 span;
+}
+
+.bottom-cards {
+  grid-column: 2 span;
+}
+
+.review-client {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.review-client-icon {
+  height: 3rem;
+  width: 3rem;
+  padding: 0.5rem;
+  border: 0.0625rem dashed #df5929;
+  border-radius: 100%;
+  position: relative;
+}
+
+.review-client-icon > img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  border-radius: 100%;
+  transform: translate(10%, 10%);
+}
+
+.review-client-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.client-personal-info > h2 {
+  color: #1b1d20;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.client-personal-info > p {
+  color: #344054;
+  margin-top: 0.5rem;
+}
+
+.client-rating {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #1d2939;
+}
+
+.card-body {
+  margin-top: 1.5rem;
+}
+
+.quote-start,
+.quote-end {
+  opacity: 50%;
+  font-size: 1.5rem;
+}
+
+.quote-end {
+  text-align: right;
+}
+
+.review-body {
+  color: #344054;
+}
+
 /* ------------------------------
 Tablet Responsive
 ------------------------------ */
@@ -828,6 +1005,20 @@ Tablet Responsive
     border-radius: 100%;
   }
 
+  .reviews {
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .top-cards {
+    grid-column: 1 span;
+  }
+
+  .bottom-cards {
+    grid-column: 1 span;
+  }
+
   /* Main Section
   ____________________________ */
 
@@ -868,7 +1059,7 @@ Tablet Responsive
   }
 
   .engaging-clips {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
     margin-top: 2rem;
   }
@@ -901,6 +1092,20 @@ Tablet Responsive
 
   .short-form-text > p {
     margin: 1rem 0;
+  }
+
+  /* Client Stories */
+
+  .client-stories-container {
+    padding: 1rem;
+  }
+
+  .client-marquee-container {
+    margin-top: 2rem;
+  }
+
+  .reviews {
+    margin-top: 1.5rem;
   }
 }
 
@@ -1024,5 +1229,25 @@ Mobile Responsive
 
   .short-form-text > h1 {
     font-size: 2rem;
+  }
+
+  /* Client Stories */
+
+  .client-stories-container {
+    padding: 0.5rem;
+  }
+
+  .client-marquee-container {
+    margin-top: 1rem;
+  }
+
+  .reviews {
+    margin-top: 1rem;
+  }
+
+  .reviews {
+    margin-top: 1.25rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
 }
