@@ -996,7 +996,135 @@ _____________________________ */
   color: #949494;
 }
 
+/* Footer */
 
+.footer {
+  padding: 5rem 7.5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 3rem;
+}
+
+.logo-container > img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo-container > h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.logo-container > p,
+.quick-links > a,
+.footer-services > a {
+  color: #344054;
+  text-decoration: none;
+}
+
+.footer-btns {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.links-services {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.quick-links,
+.footer-services,
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quick-links > h2,
+.footer-services > h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.contact-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.contact-us > input,
+.contact-us > textarea {
+  border: 0.0625rem solid #d0d5dd;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.5rem;
+  font-family: "Lato", "Lucida Sans", Verdana, sans-serif;
+}
+
+.submit-btn {
+  background-color: #1d1d1d;
+  color: white;
+  padding: 0.5rem;
+  border: 0.0625rem solid #1d1d1d;
+  border-radius: 0.75rem;
+  font-family: "Poppins", "Times New Roman", Times, serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-border {
+  border: 0.0625rem solid whitesmoke;
+  margin: 2.5rem 0;
+}
+
+.copy-right {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: #1d1d1d;
+  cursor: pointer;
+}
+
+.quick-links > a:hover,
+.footer-services > a:hover {
+  color: #a657e7;
+  position: relative;
+}
+
+.quick-links > a:hover::after,
+.footer-services > a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  border-bottom: 0.125rem solid #a657e7;
+}
 
 /* ------------------------------
 Tablet Responsive
@@ -1200,6 +1328,50 @@ Tablet Responsive
   .collapse {
     padding: 1.25rem;
   }
+
+  /* Footer */
+
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .main-footer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .logo-container > img {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+
+  .logo-container > h2 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-btns {
+    margin-top: 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .links-services {
+    gap: 2rem;
+  }
+
+  .footer-border {
+    margin: 2rem 0;
+  }
+
+  .quick-links > a:hover::after,
+  .footer-services > a:hover::after {
+    width: 40%;
+  }
 }
 
 /* ------------------------------
@@ -1365,5 +1537,45 @@ Mobile Responsive
 
   .collapse {
     padding: 1rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 0.5rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .main-footer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .logo-container > img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .logo-container > h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-btns {
+    margin-top: 1.25rem;
+    gap: 1rem;
+  }
+
+  .links-services {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer-border {
+    margin: 1.5rem 0;
   }
 }
