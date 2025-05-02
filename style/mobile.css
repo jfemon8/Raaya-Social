@@ -198,6 +198,11 @@ Mobile Responsive
     margin-bottom: 0.5rem;
   }
 
+  .contact-us > input,
+  .contact-us > textarea {
+    margin-top: 0;
+  }
+
   .footer-btns {
     margin-top: 1.25rem;
     gap: 1rem;

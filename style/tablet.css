@@ -218,13 +218,18 @@ Tablet Responsive
   }
 
   .logo-container > img {
-    height: 7.5rem;
-    width: 7.5rem;
+    height: 6rem;
+    width: 6rem;
   }
 
   .logo-container > h2 {
     margin-top: 1.75rem;
     margin-bottom: 0.75rem;
+  }
+
+  .contact-us > input,
+  .contact-us > textarea {
+    margin-top: 0.25rem;
   }
 
   .footer-btns {
