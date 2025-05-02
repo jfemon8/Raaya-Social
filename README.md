@@ -40,7 +40,6 @@ This responsive and interactive website is designed with modern web technologies
 
 ### 🚀 Deployment
 
-🔗 [Netlify](https://raaya-smm.netlify.app/) : https://raaya-smm.netlify.app/
+🔗 Netlify: https://raaya-smm.netlify.app/
 
-🔗 [GitHub Pages](https://jfemon8.github.io/Raaya-Social/) : https://jfemon8.github.io/Raaya-Social/
-
+🔗 GitHub Pages: https://jfemon8.github.io/Raaya-Social/
