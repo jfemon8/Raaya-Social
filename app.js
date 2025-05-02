@@ -58,3 +58,29 @@ document.querySelector('.carousel-nav.right2').addEventListener('click', () => {
     carousel2.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 });
 
+
+
+// FAQ Toggle
+
+const faqCards = document.querySelectorAll('.collapse');
+
+const handleFAQClick = (card) => {
+    if (card.classList.contains('collapse-border')) {
+        card.classList.remove('collapse-border');
+        const cardTitle = card.querySelector('.collapse-title').querySelector('span');
+        cardTitle.innerHTML = `<i class="fa-solid fa-circle-plus"></i>`;
+        const cardDetails = card.querySelector('.collapse-content');
+        cardDetails.classList.add('collapse-content-hide');
+    }
+    else {
+        card.classList.add('collapse-border');
+        const cardTitle = card.querySelector('.collapse-title').querySelector('span');
+        cardTitle.innerHTML = `<i class="fa-solid fa-circle-minus"></i>`;
+        const cardDetails = card.querySelector('.collapse-content');
+        cardDetails.classList.remove('collapse-content-hide');
+    }
+}
+
+faqCards.forEach(card => {
+    card.addEventListener('click', () => handleFAQClick(card));
+})
