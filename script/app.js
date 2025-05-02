@@ -13,6 +13,16 @@ document.getElementById("nested_dropdown_btn").addEventListener("click", functio
 
 
 
+// Handle Scrolling
+
+const handleNavClick = (id) => {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+
+
 // Active clicked package
 
 const serviceCards = document.querySelectorAll('.package-card');

@@ -1,0 +1,247 @@
+/* ------------------------------
+Tablet Responsive
+------------------------------ */
+
+@media only screen and (max-width: 64rem) {
+  /* Navbar */
+
+  .lg-menu {
+    display: none;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+  .nav-container {
+    padding: 1rem;
+  }
+
+  /* Hero Section */
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero-social-icons {
+    grid-column: span 1;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  /* Featured Clients */
+
+  .featured-clients {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .featured-clients-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .featured-clients-title > h1 {
+    font-size: 1.75rem;
+  }
+
+  .featured-clients-title > p {
+    font-size: 1rem;
+  }
+
+  .vertical-line,
+  .vertical-line-2 {
+    display: none;
+  }
+
+  .horizontal-line {
+    display: block;
+    height: 0.0625rem;
+    width: 100%;
+    background: linear-gradient(to left, transparent, #000000, transparent);
+    border-radius: 100%;
+  }
+
+  .reviews {
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .top-cards {
+    grid-column: 1 span;
+  }
+
+  .bottom-cards {
+    grid-column: 1 span;
+  }
+
+  /* Main Section
+    ____________________________ */
+
+  .main-container {
+    padding: 1rem;
+  }
+
+  /* Services */
+
+  .creative-services {
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .service-title {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  .service-description {
+    width: 90%;
+  }
+
+  .services-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .provided-services,
+  .packages {
+    width: 100%;
+  }
+
+  /* Engaging Section */
+
+  .engaging-container {
+    margin-top: 2rem;
+  }
+
+  .engaging-clips {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  /* Business Section */
+
+  .business {
+    margin-top: 2rem;
+  }
+
+  .business-title {
+    gap: 0.5rem;
+  }
+
+  .business-title > h1 {
+    font-size: 2rem;
+  }
+
+  /* Short Form Section */
+
+  .short-form-container {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .short-form-text > h1 {
+    font-size: 2.5rem;
+  }
+
+  .short-form-text > p {
+    margin: 1rem 0;
+  }
+
+  /* Client Stories */
+
+  .client-stories-container {
+    padding: 1rem;
+  }
+
+  .client-marquee-container {
+    margin-top: 2rem;
+  }
+
+  .reviews {
+    margin-top: 1.5rem;
+  }
+
+  /* FAQ Section */
+
+  .faq {
+    padding: 1rem;
+  }
+
+  .faq-title {
+    font-size: 2.5rem;
+  }
+
+  .faq-description {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .faq-container {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .collapse {
+    padding: 1.25rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .main-footer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .logo-container > img {
+    height: 7.5rem;
+    width: 7.5rem;
+  }
+
+  .logo-container > h2 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-btns {
+    margin-top: 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .links-services {
+    gap: 2rem;
+  }
+
+  .footer-border {
+    margin: 2rem 0;
+  }
+
+  .quick-links > a:hover::after,
+  .footer-services > a:hover::after {
+    width: 40%;
+  }
+}
